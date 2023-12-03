@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="stylesResponsive.css" />
+  </head>
+  <body>
+    <!-- FONDO  -->
+    <img id="fondo" src="img/FondoBody.webp" alt="fondoBod" />
+    <!--CONTENEDOR -->
+    <img class="portada" src="img/banners.png" alt="Imagen1" />
+    <div class="containt">
+    
+
+      <!-- ARCO DE FLOR SUPERIOR -->
+      <figure class="element__efect">
+        <img
+          id="arcoSup"
+          class="imagen-comun fadeIn"
+          src="img/arco.webp"
+          alt="Imagen 2"
+          data-animation="fade"
+        />
+      </figure>
+
+      <div class="element__text">
+        <!-- TEXTO-->
+        <p class="texto nombresTexto-fade" data-animation="show">
+          Laynol & Keyko
+        </p>
+      </div>
+
+      <figure class="element__efect">
+        <!-- ARCO DE FLOR INFERIOR -->
+        <img
+          id="arcoInfe"
+          class="imagen-comun fadeIn"
+          src="img/arco_i.webp"
+          alt="Imagen 2"
+          data-animation="fadeI"
+        />
+      </figure>
+
+      <div>
+        <p class="text frases">
+          Con la bendición de Dios y de nuestros padres nos complace invitarte a
+        </p>
+        <p class="text-boda frases">Nuestra Boda</p>
+        <div class="contenedorPadre">
+          <div class="contenedorHijo">
+            <div id="derecha">
+              <p class="text frases">Juan Verde Tiburcio</p>
+              <p class="text frases">Auristela Casamayor Navarro</p>
+            </div>
+
+            <div id="linea-vertical"></div>
+
+            <div id="izquierda">
+              <p class="text frases">Tito Ybañez Bello</p>
+              <p class="text frases">Marcionila Santos Carranza</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contenedorFecha">
+        <img class="imgFecha nombresTexto-fadeI" src="img/marcoFechaPC.webp" />
+
+        <div class="cuadroFecha">
+          <p class="text fecha">13</p>
+          <p class="text mes">ENERO</p>
+          <!-- FECHA -->
+          <div class="contenedor">
+            <div class="columna">
+              <div class="linea"></div>
+              <p class="text diaHora">Sábado</p>
+              <div class="linea"></div>
+            </div>
+
+            <div class="columna">
+              <div class="linea"></div>
+              <div class="contenedorHora">
+                <p class="text hora">2:00</p>
+                <p class="text diaHora">pm</p>
+              </div>
+
+              <div class="linea"></div>
+            </div>
+          </div>
+          <p class="text anio">2024</p>
+        </div>
+      </div>
+
+      <div>
+        <p class="text frases">
+          Cada segundo que pasa nos acerca un poco más a ese momento mágico, el
+          día de nuestra boda se siente cada vez más cerca.
+        </p>
+      </div>
+
+      <div class="countdown">
+        <div class="countdown-item">
+          <span class="text reloj" id="day"></span>
+          <p class="text subTituloReloj">Días</p>
+        </div>
+        <div class="countdown-item">
+          <span class="text reloj" id="hours"></span>
+          <p class="text subTituloReloj">Horas</p>
+        </div>
+        <div class="countdown-item">
+          <span class="text reloj" id="minutes"></span>
+          <p class="text subTituloReloj">Minutos</p>
+        </div>
+        <div class="countdown-item">
+          <span class="text reloj" id="seconds"></span>
+          <p class="text subTituloReloj">Segundos</p>
+        </div>
+      </div>
+
+      <p class="text frases">CELEBRAREMOS ESTE MOMENTO ESPECIAL EN:</p>
+
+      <div class="contenedorFecha">
+        <img class="img-linea-tiempo" src="img/LineaTiempo.png" />
+
+        <div class="contenedor-Linea-tiempo">
+          <div class="contenedor-fila-horario superior">
+            <div class="contenedor-celda contenedor-celda-izquierda">
+              <img
+                class="img-icon-lineaTiempo"
+                src="img/sinagoga.png"
+                alt="Descripción de la Imagen 1"
+              />
+              <p class="text text-linea-tiempo">Ceremonia Religiosa</p>
+              <p class="text color-hora-linea text-linea-tiempo">3:00 pm</p>
+            </div>
+            <div class="contenedor-celda contenedor-celda-derecha">
+              <p class="text text-linea-tiempo">MMM EL PORVENIR</p>
+              <p class="text text-linea-tiempo">Av. Sánchez Carrión 1545</p>
+              <a
+                class="boton btn"
+                href="https://maps.app.goo.gl/cPDLxJrgAkcu5ivw8"
+                target="_blank"
+                >Ver ubicación</a
+              >
+            </div>
+          </div>
+
+          <div class="contenedor-fila-horario inferior">
+            <div class="contenedor-celda contenedor-celda-izquierda">
+              <img
+                class="img-icon-lineaTiempo"
+                src="img/alfombra-roja.png"
+                alt="Descripción de la Imagen 2"
+              />
+              <p class="text text-linea-tiempo">Recepción</p>
+              <p class="text color-hora-linea text-linea-tiempo">5:30 pm</p>
+            </div>
+
+            <div class="contenedor-celda contenedor-celda-derecha">
+              <img
+                id="imgCostaPalmeras"
+                src="img/costa-palmeras.jpg"
+                alt="CostaPalmeras"
+              />
+
+              <p class="text text-linea-tiempo">Costa Palmeras, Laredo</p>
+              <a
+                class="boton btn"
+                href="https://maps.app.goo.gl/UAfL66AM3q32MxJz9"
+                target="_blank"
+                >Ver ubicación</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contenedor-vestimenta">
+      <img id="img-icon-vestimenta" src="img/ropa.png" alt="Descripción de la Imagen 1" />
+      <p class="text text-linea-tiempo">Vestimenta</p>
+      <p class="text color-hora-linea text-linea-tiempo">Elegante</p>
+      </div>
+      <img
+      class="flowerCentral"
+      src="img/FlowerCentral.webp"
+      alt="FlowerCentral"
+    />
+
+      <div class="contenedor-varios">
+        <figure class="element__efect">
+          <img
+            class="figure-lados"
+            id="flower-derecho"
+            src="img/FlowerDerecho.webp"
+            alt="FlowerDerecho"
+            data-animation="fadeFlowerD"
+          />
+        </figure>
+
+        <div class="varios">
+          <div class="contenedor-frases">
+            <p class="text text-boda-poema">
+              Como las olas del mar que abrazan la orilla,
+            </p>
+            <p class="text-boda text-boda-poema">dos almas se encuentran,</p>
+            <p class="text text-boda-poema">
+              una conexión sencilla.En la travesía de la vida, juntos avanzarán,
+              unidos en la fortaleza que el amor les dará.
+            </p>
+          </div>
+
+          <figure class="element__efect">
+            <img
+              src="img/imgmodal.webp"
+              class="image-detail fadeIn"
+              data-toggle="modal"
+              data-target="#miModal"
+              data-animation="fadeFlowerI"
+            />
+          </figure>
+
+          <div class="contenedor-frases">
+            <p class="text-boda text-boda-poema">La pasaremos genial</p>
+            <p class="text frases">
+              Te agradecemos que nos confirmes tu asistencia antes del 1 de
+              enero. Tu respuesta es muy importante para nosotros.
+            </p>
+          </div>
+
+          <div class="contenedor-fila">
+            <div class="contenedor-texto-y-boton">
+              <p class="text-name-novios">Keyko Ybañez</p>
+              <a class="boton btn" href="https://wa.link/7clbbb">Confirmar</a>
+            </div>
+
+            <div class="contenedor-texto-y-boton">
+              <p class="text-name-novios">Laynol Verde</p>
+              <a class="boton btn" href="https://wa.link/w5v3lv">Confirmar</a>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="contenedor-variosDerecha">
+        <figure class="element__efect">
+          <img
+            class="figure-lados"
+            id="flower-izquierdo"
+            src="img/FlowerIzquierdo.webp"
+            data-animation="fadeFlowerI"
+          />
+        </figure>
+        <div class="varios varios-derecha">
+          <div class="contenedor-frases">
+            <p class="text-boda frases text-boda-poema">Regalos</p>
+            <p class="text frases">
+              Que formes parte de este día especial es lo mas importante para
+              nosotros pero si quieres darnos tus muestras de cariño, lo puedes
+              hacer mediante:
+            </p>
+            <img
+              id="imgYapePlin"
+              src="img/icono-yape-plin.png"
+              alt="CostaPalmeras"
+            />
+            <p class="text-boda text-boda-novios">Novio</p>
+            <p class="btn-numero">♥ 945957957</p>
+
+            <p class="text-boda text-boda-novios">Novia</p>
+            <p class="btn-numero">♥ 984347449</p>
+
+            <p class="text frases cuenta-banco">CUENTA BANCARIA</p>
+            <p class="btn-numero">003-898-013328236771-42</p>
+
+            <p class="text frases">
+              Para aquellos que deseen obsequiar un regalo físico, hemos
+              habilitado una dirección donde pueden enviarlo. Cualquier gesto
+              será recibido con gratitud y alegría.
+            </p>
+
+            <img class="img-icon" src="img/casa.png" alt="CostaPalmeras" />
+
+            <a class="boton btn" href="">Av. Jaime Blanco 1648 - El Porvenir</a>
+            <p class="text frases">
+              Agradecemos de antemano tu cariño y estamos emocionados de
+              compartir este momento único contigo."
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="miModal" class="modal fade" role="dialog" aria-hidden="true">
+        <div
+          class="modal-dialog modal-xl modal-dialog-centered"
+          role="document"
+        >
+          <div class="modal-content">
+            <div class="modal-body">
+              <div
+                class="carousel slide"
+                data-ride="carousel"
+                id="carousel4"
+                data-interval="false"
+              >
+                <ol class="carousel-indicators">
+                  <li
+                    data-target="#carousel4"
+                    data-slide-to="0"
+                    class="pointer car_item"
+                  ></li>
+                  <li
+                    data-target="#carousel4"
+                    data-slide-to="1"
+                    class="pointer car_item"
+                  ></li>
+                  <li
+                    data-target="#carousel4"
+                    data-slide-to="2"
+                    class="pointer car_item active"
+                  ></li>
+                  <li
+                    data-target="#carousel4"
+                    data-slide-to="3"
+                    class="pointer car_item"
+                  ></li>
+                  <li
+                    data-target="#carousel4"
+                    data-slide-to="4"
+                    class="pointer car_item"
+                  ></li>
+                  <li
+                    data-target="#carousel4"
+                    data-slide-to="5"
+                    class="pointer car_item"
+                  ></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item">
+                    <img
+                      class="d-block w-100 img-fluid imageHeight"
+                      src="img/img1.png"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      class="d-block w-100 img-fluid imageHeight"
+                      src="img/img2.jpg"
+                    />
+                  </div>
+                  <div class="carousel-item active">
+                    <img
+                      class="d-block w-100 img-fluid imageHeight"
+                      src="img/img3.jpg"
+                    />
+                  </div>
+                </div>
+                <a
+                  class="carousel-control-prev"
+                  href="#carousel4"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                </a>
+                <a
+                  class="carousel-control-next"
+                  href="#carousel4"
+                  role="button"
+                  data-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

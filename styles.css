@@ -1,0 +1,573 @@
+@font-face {
+  font-family: "josephsophia";
+  src: url("fuente/Weather\ Sunday\ -\ Personal\ Use.otf") format("opentype");
+  /* Otra declaración de fuente para formatos de fuente adicionales (opcional) */
+}
+@font-face {
+  font-family: "Adelia";
+  src: url("fuente/Adelia.otf") format("opentype");
+  /* Otra declaración de fuente para formatos de fuente adicionales (opcional) */
+}
+:root{
+  --color-terracota:#B25617;
+}
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.imageHeight {
+  max-height: 100%;
+  border-radius: 1rem;
+
+}
+
+#fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Para asegurarse de que la imagen esté detrás del contenido */
+}
+
+.containt {
+  text-align: center;
+  border: 0;
+  width: 100%;
+  margin: 0 ;
+  padding: 0;
+}
+
+.portada {
+  width: 100%;
+  height: 100vh;
+  display: block;
+  margin: 0 ;
+  border: 0;
+  background-size: cover;
+}
+
+.imagen-comun{
+  width: 60%;
+
+}
+#arcoSup {
+
+  height: auto;
+  display: block;
+  margin: auto;
+  border: 0;
+}
+#arcoInfe {
+
+  height: auto;
+  display: block;
+  margin: auto;
+  border: 0;
+}
+
+.texto {
+  font-family: "josephsophia";
+  text-align: center;
+  font-size: 8rem;
+  margin: 0;
+  margin-top: -5%;
+
+  /* Ajusta el margen superior según tus preferencias */
+}
+.text-boda{
+  font-family: "josephsophia";
+  text-align: center;
+  font-size: 4rem;
+}
+.text-boda-novios{
+  margin-top: 10%;
+  margin-bottom: 0;
+}
+
+
+.contenedorPadre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.contenedorHijo {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+#izquierda, #derecha {
+  flex: 1;
+}
+
+#linea-vertical {
+  /* width: 2px;
+  height: 100%;
+  max-height: 100%;  
+  background-color: black; */
+  width: 2px;
+  height: 100px;
+  border-right: 1px solid #000;
+  /* border-left: 1px solid #000; */
+}
+
+
+.contenedorFecha {
+  position: relative;
+  /* overflow: hidden; */
+  width: 100%;
+  margin: 0;
+  background-position: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgFecha {
+  width: 60%;
+  height: 100%;
+  background-position: center;
+}
+
+.cuadroFecha {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  object-fit: cover;
+
+  /* Propiedades específicas que quieres mantener */
+}
+
+/* Estilos adicionales para .cuadroFecha si es necesario */
+
+.contenedor {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  width: 22%;
+}
+
+.columna {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 47%;
+}
+
+.contenedorHora {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+}
+
+.linea {
+  width: 100%;
+  border-top: 2px solid #000;
+  /* border-bottom: 1px solid #000; */
+  margin: 5px 0;
+}
+
+.text {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2rem;
+
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.fecha {
+  /* font-family: 'Cormorant Garamond', serif; */
+  margin-top: 0;
+  font-size: 10rem;
+
+  margin-left: 0;
+  margin-right: 0;
+}
+.hora {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.mes {
+  font-size: 1.8rem;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+.anio {
+  font-size: 2rem;
+}
+
+.frases {
+  margin: 4% 20%;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5% 5%;
+}
+
+.countdown-item {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+  padding: 10px;
+  height: 150px;
+  width: 150px;
+  background-color: var(--color-terracota);
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.countdown-item .reloj {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #f0f3f4;
+}
+.countdown-item .subTituloReloj {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+  color: #f0f3f4;
+  margin-bottom: 10%;
+}
+
+
+.contenedor-Linea-tiempo{
+  position: absolute;
+  top: 5%;
+  left: 0;
+  width: 100%;
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  object-fit: cover;  
+   
+  }
+
+
+
+
+
+.contenedor-fila-horario{
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  width: 70%; 
+  text-align: center;
+  align-items: center;
+ 
+}
+
+.contenedor-celda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 70%;
+  
+
+}
+.superior{
+margin-bottom: 2%;
+     
+}
+
+.img-icon-lineaTiempo{
+  width: 20%;
+}
+#img-icon-vestimenta{
+  width: 8%;
+}
+
+.color-hora-linea{
+  color:#B69507 ;
+
+  /* -webkit-text-stroke: 1px #8C7511; */
+}
+
+
+.img-linea-tiempo{
+
+}
+
+.contenedor-varios {
+  position: relative;
+  top: -5%;
+  width: 100%;
+  height: auto;
+  /* background-position: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  display: flex; 
+  /* align-items: center; */
+  justify-content: flex-start; 
+  align-items: stretch;
+}
+
+.contenedor-variosDerecha{
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+  top: 5%;
+}
+.varios {
+  position: absolute;
+  top: 17%;
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  object-fit: cover;
+  box-sizing: border-box;
+
+}
+
+.image-detail{
+  width: 60%;
+  margin: 5% 0;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s ease;
+
+}
+.image-detail:hover {
+  /* transform: scale(1.1); */
+  transition: transform 0.7s ease; /* Añade una transición suave al efecto */
+}
+
+.modal-body{
+  padding: 0;
+}
+
+.figure-lados{
+  width: 100%;  
+
+}
+
+#flower-derecho{
+
+  float: left;
+}
+#flower-izquierdo{
+  float: right;
+} 
+/* Estilos personalizados para el modal */
+.modal-content {
+border-radius: 1rem!important;
+}
+.carousel-inner {
+  border-radius: 1rem;
+}
+
+.flowerCentral{
+  display: flex;
+  width: 40%;
+  margin: 10% auto;
+}
+.text-boda-poema{
+  margin: 0 20%;
+}
+
+.contenedor-fila {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+}
+#imgCostaPalmeras{
+  width: 20%;
+  border-radius: 20%;
+}
+#imgYapePlin{
+  width: 9%;
+  border-radius: 8%;
+  margin: 3% 0;
+
+}
+
+.img-icon{
+  display: block;
+  width: 10%;
+  background-position: center;
+  text-align: center;
+  margin:  0 auto;
+}
+
+.btn-numero{
+  background-color: var(--color-terracota);
+  color: white;
+  border-radius: 7px;
+  display: inline-block;
+  background-position: center;
+  text-align: center;
+  margin: 2% auto;
+  font-size: 1.5rem;
+  padding: 0 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#num-banco{
+  font-size: 1.5rem;
+  font-weight: 450;
+
+}
+.cuenta-banco{
+  margin-bottom: 5px;
+}
+.contenedor-texto-y-boton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-name-novios {
+  font-family: "josephsophia";
+  font-size: 2.5rem;
+  margin: 0 20px; 
+}
+
+.boton {
+  padding: 10px;
+  background-color: var(--color-terracota);
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+
+}
+.boton:hover{
+  background-color: #B55223;
+  color: white;
+  transform: scale(1.1);
+  transition: 0.3s ease ;
+}
+.boton:not(:hover) {
+  transform: scale(1);
+  transition: 0.3s ease ;
+}
+
+
+
+
+
+
+
+
+/* ----------------************************/
+[data-animation="fadeFlowerD"] {
+  opacity: 0;
+  transform: translate(-5%);
+  transition: 0.9s ease-in 0.3s;
+
+  --opacity: 1;
+  --transform: translate(0%);
+}
+[data-animation="fadeFlowerI"] {
+  opacity: 0;
+  transform: translate(5%);
+  transition: 0.9s ease-in 0.3s;
+
+  --opacity: 1;
+  --transform: translate(0%);
+}
+[data-animation="fade"] {
+  opacity: 0;
+  /* transform: translate(7%); */
+  scale: 0.9;
+  transition: 0.9s ease-in 0.3s;
+
+  --opacity: 1;
+  --scale: 1;
+  /* --transform: translate(0%); */
+}
+[data-animation="fadeI"] {
+  opacity: 0;
+  /* transform: translate(-7%); */
+  scale: 0.9;
+  transition: 0.9s ease-in 0.3s;
+
+  --opacity: 1;
+  --scale: 1;
+  /* --transform: translate(0%); */
+}
+
+.unset {
+  opacity: var(--opacity);
+  transform: var(--transform);
+  scale: var(--scale);
+}
+
+/* Definir la animación */
+@keyframes fade {
+  from {
+    opacity: 1; /* Inicio de la animación, texto invisible */
+  }
+  to {
+    opacity: 0; /* Fin de la animación, texto completamente visible */
+  }
+}
+@keyframes fadeI {
+  from {
+    opacity: 0; /* Inicio de la animación, texto invisible */
+  }
+  to {
+    opacity: 1; /* Fin de la animación, texto completamente visible */
+  }
+}
+/* Estilo inicial del texto */
+.nombresTexto-fade {
+  opacity: 0; /* Configuración inicial, texto invisible */
+  animation-name: fade;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.nombresTexto-fadeI {
+  opacity: 0; /* Configuración inicial, texto invisible */
+  animation-name: fadeI;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+
+

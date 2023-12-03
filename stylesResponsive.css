@@ -156,7 +156,7 @@
     }
 } */
 
-@media (max-width: 360px) {
+@media (max-width: 375px) {
   #fondo {
     content: url('img/fondoMobile.gif');
     background-position: center; /* Centra la imagen horizontalmente */

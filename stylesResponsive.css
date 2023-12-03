@@ -434,5 +434,19 @@
       width: 15%;
       margin-bottom: 5%;
     }
+    .music-player {
+      bottom: 10px;
+      right: 10px;
+    }
+
+    #play-pause-button {
+      width: 40px;
+      height: 40px;
+      align-items: center;
+      /* background-color: #fff; */
+
+      /* margin-right: 10px; */   
+    
+    }
     
 }

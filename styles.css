@@ -486,6 +486,51 @@ figure{
 }
 
 
+/* boton flotante de musica */
+
+.music-player {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  /* background-color: #333; */
+  /* padding: 10px; */
+  /* border-radius: 50%; */
+  cursor: pointer;
+}
+#play-pause-container {
+    transform: scale(1);
+    transition: 0.6 ease;
+}
+
+#play-pause-button {
+  width: 85px;
+  height: 85px;
+  align-items: center;
+  /* background-color: #fff; */
+  border-radius: 50%;
+  /* margin-right: 10px; */   
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+#play-pause-button.play {
+  /* background-image: url('img/boton-de-play.png');  */
+
+  background-size: cover;
+
+}
+
+#play-pause-button.pause {
+
+  /* background-image: url('img/pausa.png');  */
+  background-size: cover;
+}
+#play-pause-container:hover #play-pause-button,
+#play-pause-container.scroll-visible #play-pause-button {
+  transform: scale(1.1);
+  transition: 0.3 ease; /* Agrandamos el botón al pasar el mouse sobre el contenedor */
+}
 
 
 /* ----------------************************/

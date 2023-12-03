@@ -187,18 +187,19 @@
   }
 
   .texto {
-    font-size: 2.9rem;
+    font-size: 3rem;
   
   }
   .text-boda{
     font-size: 1.8rem;
   }
   #arcoInfe{
-    margin-top: 10%;
+    margin-top: 6%;
   }
 
   .imagen-comun{
     width: 95%;
+    max-width: 95%;
   }
 
     #linea-vertical {
@@ -234,11 +235,10 @@
       margin: 0;
     }
     .fecha {
-      font-size: 4rem;
+      font-size: 5rem;
       margin-left: 10px;
       margin-right: 10px;
-      margin-bottom: 10%;
-      
+      margin-top: -8%;
     }
     .hora{
       font-size: 1.4rem;
@@ -268,18 +268,18 @@
     .countdown-item {
       margin: 0 7px ;
       padding: 10px;
-      height: 50px;
-      width: 50px;
+      height: 70px;
+      width: 70px;
 
-      border-radius: 5px;
+      border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
     .countdown-item .reloj {
-      font-size: 1rem;
+      font-size: 1.5rem;
     
     }
     .countdown-item .subTituloReloj {
-      font-size: 0.7rem;
+      font-size: 0.9rem;
       margin-bottom: 10%;
     }
 
@@ -357,10 +357,10 @@
 
 
     .contenedor-varios {
-      top: -2%;
+      top: 10%;
     }
     .varios{
-      top: 8%;
+      top: -55%;
     }
 
     .contenedor-variosDerecha{

@@ -61,15 +61,15 @@ body {
 #arcoSup {
 
   height: auto;
-  display: block;
-  margin: auto;
+
+  margin: 0;
   border: 0;
 }
 #arcoInfe {
 
   height: auto;
-  display: block;
-  margin: auto;
+
+  margin: 0;
   border: 0;
 }
 

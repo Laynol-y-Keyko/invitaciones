@@ -369,11 +369,11 @@
     .figure-lados{
       width: 30%;
       height: 100%;
-      
+      max-width: 30%;
 
     }
     .varios-derecha{
-      top: -70%;
+      top: -50%;
     }
 
     .image-detail{

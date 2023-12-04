@@ -359,7 +359,8 @@ margin-bottom: 2%;
   margin: 5% 0;
   border-radius: 1rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  transition: box-shadow 0.3s ease;
+  /* transition: box-shadow 0.3s ease; */
+  cursor: pointer;
 
 }
 .image-detail:hover {
@@ -530,6 +531,30 @@ figure{
 #play-pause-container.scroll-visible #play-pause-button {
   transform: scale(1.1);
   transition: 0.3 ease; /* Agrandamos el botón al pasar el mouse sobre el contenedor */
+}
+.carousel-inner {
+  border-radius: 1rem;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+
+  width: 50px;
+  height: 50px;
+
+}
+
+.carousel-control-next, .carousel-control-prev {
+  opacity: 0.8;
+  transition: opacity .15s ease;
+}
+.carousel-control-prev {
+  left: -15%;
+}
+.carousel-control-next {
+  right: -15%;
+}
+.contenedor-carrusel{
+  width: 50%;
 }
 
 

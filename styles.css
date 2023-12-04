@@ -353,6 +353,9 @@ margin-bottom: 2%;
   box-sizing: border-box;
 
 }
+.varios-derecha{
+  top: -90%;
+}
 
 .image-detail{
   width: 60%;
@@ -555,6 +558,7 @@ figure{
 }
 .contenedor-carrusel{
   width: 50%;
+  margin: 40px 0;
 }
 
 

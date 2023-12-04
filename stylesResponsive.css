@@ -368,12 +368,11 @@
     }
     .figure-lados{
       width: 30%;
-      height: 100%;
       max-width: 30%;
 
     }
     .varios-derecha{
-      top: -50%;
+      top: -65%;
     }
 
     .image-detail{
@@ -466,5 +465,6 @@
     }
     .contenedor-carrusel{
       width: 90%;
+      margin: 15px 0;
     }
 }

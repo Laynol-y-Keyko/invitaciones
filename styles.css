@@ -1,15 +1,41 @@
 @font-face {
-  font-family: "josephsophia";
+  font-family: "Sunday";
   src: url("fuente/Weather\ Sunday\ -\ Personal\ Use.otf") format("opentype");
-  /* Otra declaración de fuente para formatos de fuente adicionales (opcional) */
+
 }
 @font-face {
-  font-family: "Adelia";
-  src: url("fuente/Adelia.otf") format("opentype");
-  /* Otra declaración de fuente para formatos de fuente adicionales (opcional) */
+  font-family: "ChristmasWish";
+  src: url("fuente/ChristmasWish-Calligraphy.otf") format("opentype");
+
 }
+@font-face {
+  font-family: "Qwerty";
+  src: url("fuente/Qwerty\ Ability\ -\ Personal\ Use.otf") format("opentype");
+
+}
+@font-face {
+  font-family: "Honey";
+  src: url("fuente/Honey\ Florist\ -\ Personal\ Use.otf") format("opentype");
+
+}
+@font-face {
+  font-family: "best moment";
+  src: url("fuente/Best\ Moment.otf") format("opentype");
+
+}
+/* @font-face{
+  font-family: 'Cormorant Garamond', serif;
+  src: url("fuente/CormorantGaramond-Medium.ttf");
+} */
+
 :root{
   --color-terracota:#B25617;
+  /* --fuentePrincipal:"Sunday"; */
+  /* --fuentePrincipal:"ChristmasWish"; */
+  --fuentePrincipal:"Qwerty";
+  /* --fuentePrincipal:"Honey"; */
+  --fuenteSecundaria:"Cormorant Garamond";
+  --fuenteAlternativa:"best moment";
 }
 body {
   margin: 0;
@@ -47,7 +73,7 @@ body {
 
 .portada {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   display: block;
   margin: 0 ;
   border: 0;
@@ -55,7 +81,7 @@ body {
 }
 
 .imagen-comun{
-  width: 60%;
+  width: 40%;
 
 }
 #arcoSup {
@@ -74,22 +100,22 @@ body {
 }
 
 .texto {
-  font-family: "josephsophia";
+  font-family: var(--fuentePrincipal);
   text-align: center;
-  font-size: 8rem;
+  font-size: 10rem;
   margin: 0;
   margin-top: -5%;
 
   /* Ajusta el margen superior según tus preferencias */
 }
 .text-boda{
-  font-family: "josephsophia";
+  font-family: var(--fuentePrincipal);
   text-align: center;
-  font-size: 4rem;
+  font-size: 5rem;
 }
 .text-boda-novios{
-  margin-top: 10%;
-  margin-bottom: 0;
+
+  margin-top: 3%;
 }
 
 
@@ -103,7 +129,7 @@ body {
 .contenedorHijo {
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 70%;
 }
 
 #izquierda, #derecha {
@@ -120,11 +146,14 @@ body {
   border-right: 1px solid #000;
   /* border-left: 1px solid #000; */
 }
-
+.containt .tituloPrincipal{
+  margin-bottom: 60px;
+}
 
 .contenedorFecha {
   position: relative;
   /* overflow: hidden; */
+  /* margin-top: 60px; */
   width: 100%;
   margin: 0;
   background-position: center;
@@ -190,15 +219,15 @@ body {
 }
 
 .text {
-  font-family: "Cormorant Garamond", serif;
+  font-family: var(--fuenteSecundaria);
   font-size: 2rem;
 
   margin-top: 0;
   margin-bottom: 0;
 }
 
+
 .fecha {
-  /* font-family: 'Cormorant Garamond', serif; */
   margin-top: 0;
   font-size: 10rem;
 
@@ -303,6 +332,7 @@ margin-bottom: 2%;
 
 .img-icon-lineaTiempo{
   width: 20%;
+  
 }
 #img-icon-vestimenta{
   width: 8%;
@@ -317,33 +347,25 @@ margin-bottom: 2%;
 
 .contenedor-varios {
   position: relative;
-  top: -5%;
+  /* top: -5%; */
   width: 100%;
-  height: auto;
+  /* height: 50%; */
   /* background-position: center;
   align-items: center;
   background-repeat: no-repeat;
   background-size: cover; */
-  display: flex; 
+  display: flex;
   /* align-items: center; */
-  justify-content: flex-start; 
-  align-items: stretch;
+  justify-content: flex-start;
+  /* align-items: stretch; */
 }
 
-.contenedor-variosDerecha{
-  position: relative;
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: flex-end;
-  top: 5%;
-}
-.varios {
+.contenedor-varios .varios {
   position: absolute;
-  top: 17%;
+  top: 0;
   left: 0;
   width: 100%;
-
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -353,6 +375,31 @@ margin-bottom: 2%;
   box-sizing: border-box;
 
 }
+
+.contenedor-variosDerecha{
+  position: relative;
+  /* width: 100%; */
+  height: auto;
+  display: flex;
+
+  justify-content: flex-end;
+
+}
+.contenedor-variosDerecha .varios{
+  position: absolute;
+  top: 38%;
+  /* left: 0; */
+  width: 100%;
+  /* height: auto; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center;
+  justify-content: center;
+  text-align: center;
+  object-fit: cover;
+  box-sizing: border-box; */
+}
+
 .varios-derecha{
   top: -90%;
 }
@@ -366,6 +413,9 @@ margin-bottom: 2%;
   cursor: pointer;
 
 }
+
+
+
 .image-detail:hover {
   /* transform: scale(1.1); */
   transition: transform 0.7s ease; /* Añade una transición suave al efecto */
@@ -436,7 +486,7 @@ border-radius: 1rem!important;
   display: inline-block;
   background-position: center;
   text-align: center;
-  margin: 2% auto;
+  margin: 10px auto;
   font-size: 1.5rem;
   padding: 0 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -456,12 +506,14 @@ border-radius: 1rem!important;
 }
 
 .text-name-novios {
-  font-family: "josephsophia";
-  font-size: 2.5rem;
+  font-family: var(--fuenteAlternativa);
+  font-weight: lighter;
+  font-size: 5rem;
   margin: 0 20px; 
 }
 
 .boton {
+  font-family:var(--fuenteSecundaria) ;
   padding: 10px;
   background-color: var(--color-terracota);
   color: white;
@@ -470,7 +522,7 @@ border-radius: 1rem!important;
   border-radius: 5px;
   cursor: pointer;
   display: inline-block;
-
+  margin: 20px 0;
 }
 .boton:hover{
   background-color: #B55223;
@@ -487,6 +539,9 @@ border-radius: 1rem!important;
 
 figure{
   margin: 0!important;
+}
+p{
+  margin: 0;
 }
 
 
@@ -509,8 +564,8 @@ figure{
 }
 
 #play-pause-button {
-  width: 85px;
-  height: 85px;
+  width: 60px;
+  height: 60px;
   align-items: center;
   /* background-color: #fff; */
   border-radius: 50%;
@@ -547,7 +602,7 @@ figure{
 }
 
 .carousel-control-next, .carousel-control-prev {
-  opacity: 0.8;
+  opacity: 0.9;
   transition: opacity .15s ease;
 }
 .carousel-control-prev {
@@ -558,7 +613,8 @@ figure{
 }
 .contenedor-carrusel{
   width: 50%;
-  margin: 40px 0;
+  margin-top: 4%;
+  margin-bottom: 8%;
 }
 
 

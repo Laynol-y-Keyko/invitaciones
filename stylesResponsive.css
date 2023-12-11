@@ -1,176 +1,21 @@
-@font-face {
-  font-family: 'josephsophia';
-  src: url('fuente/Weather\ Sunday\ -\ Personal\ Use.otf') format('opentype');
-  /* Otra declaración de fuente para formatos de fuente adicionales (opcional) */
-}
-@font-face {
-  font-family: 'Adelia';
-  src: url('fuente/Adelia.otf') format('opentype');
-  /* Otra declaración de fuente para formatos de fuente adicionales (opcional) */
-}
 
-/* @media (max-width: 1280px ) {
-
-  .portada {
-    width: 100%;
-    max-width: 100%;
-  }
-  #arcoSup{
-    margin-top: -18%;
-    max-width: 60%;
-  }
-  .texto {
-  font-size: 6rem;
-
-  }
-  #arcoInfe{
-    margin-top: -6%;
-    max-width: 60%;
-  }
-}
-
-@media (max-width: 1024px ) {
-  .portada {
-    width: 100%;
-    max-width: 100%;
-  }
-  #arcoSup{
-    margin-top: -18%;
-    max-width: 50%;
-  }
-  .texto {
-    font-size: 4rem;
-  
-    }
-    #arcoInfe{
-      margin-top: -10%;
-      max-width: 50%;
-    }
-}
-
-
-
-@media (max-width: 844px ) {
-  .container {
-    width: 100%;
-  }
-  .portada {
-    width: 100%;
-    max-width: 100%;
-  }
-  #arcoSup{
-    margin-top: -18%;
-    width: 70%;
-    max-width: 70%;
-  }
-  .texto {
-    font-size: 5rem;
-  
-    }
-    #arcoInfe{
-      margin-top: -6%;
-      width: 70%;
-      max-width: 70%;
-    }
-
-}
-@media (max-width: 600px ) {
-  #fondo{
-    background-image: url('img/fondoMobile.webp');
-  }
-  .portada {
-    width: 100%;
-    max-width: 100%;
-  }
-  #arcoSup{
-    margin-top: -10%;
-    width: 70%;
-    max-width: 70%;
-  }
-  .texto {
-    font-size: 5rem;
-  
-    }
-    #arcoInfe{
-      margin-top: -6%;
-      width: 70%;
-      max-width: 70%;
-    }
-
-} */
-/* @media (max-width: 428px) {
-  #fondo {
-    background-image: url('img/fondoMobile.webp');
-    background-position: center; 
-  }
-  .portada {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  #arcoSup{
-    margin-top: -20%;
-    width: 70%;
-    max-width: 70%;
-  }
-  .texto {
-    font-size: 2.5rem;
-  
-    }
-    #arcoInfe{
-      width: 70%;
-      max-width: 70%;
-      margin-top: 10px;
-    }
-    .contenedor {
-      width: 65%;
-    }
-    .linea {
-      width: 100%;
-      border-top: 1px solid #000;
-      border-bottom: 1px solid #000;
-      margin: 5px 0;
-    }
-    .text {
-      font-size: 1rem;
-      margin: 0;
-    }
-    .fecha {
-      font-size: 4rem;
-      margin-left: 10px;
-      margin-right: 10px;
-      margin-top: -28px;
-    }
-
-    .mes{
-      font-size: 1rem;
-      margin-top: 10px;
-      margin-bottom: 0;
-      }
-    .anio{
-      margin-top: -4px;
-      font-size: 1.3rem;
-    }
-    .frases{
-      margin:5% 10% 5% 10%;
-    }
-} */
 
 @media (max-width: 428px) {
   #fondo {
-    content: url('img/fondoMobile.gif');
+    content: url("img/fondoMobile2.gif");
     background-position: center; /* Centra la imagen horizontalmente */
   }
   .portada {
-    content: url('img/imgPrincipal.png');
+    content: url("img/imgPrincipal.png");
     width: 100%;
     max-width: 100%;
     height: auto;
   }
-
-  .contenedorFecha{
+  .containt .tituloPrincipal {
+    margin-bottom: 30px;
+  }
+  .contenedorFecha {
     width: 100%;
-
   }
 
   .imgFecha {
@@ -179,292 +24,300 @@
     display: block;
     margin-left: 0;
     margin-right: 0;
-
   }
 
-  #arcoSup{
+  #arcoSup {
     margin-top: -15%;
   }
 
   .texto {
-    font-size: 3rem;
-  
+    font-size: 4.3rem;
   }
-  .text-boda{
-    font-size: 1.8rem;
+  .text-boda {
+    font-size: 2.2rem;
   }
-  #arcoInfe{
+  #arcoInfe {
     margin-top: 6%;
   }
 
-  .imagen-comun{
+  .imagen-comun {
     width: 95%;
     max-width: 95%;
   }
+  .contenedorHijo {
+    width: 100%;
+  }
 
-    #linea-vertical {
-      /* width: 2px;
+  #linea-vertical {
+    /* width: 2px;
       height: 100%;
       max-height: 100%;  
       background-color: black; */
-      width: 2px;
-      height: 60px;
-      border-right: 1px solid #000;
-      /* border-left: 1px solid #000; */
-    }
+    width: 2px;
+    height: 70px;
+    border-right: 1px solid #000;
+    /* border-left: 1px solid #000; */
+  }
 
+  .imgFecha {
+    width: 100%;
+    background-position: center center;
+    content: url("img/marcoFechaMovil.webp");
+    align-content: center;
+    text-align: center;
+  }
 
-    .imgFecha {
-      width: 100%;
-      background-position: center center;
-      content: url('img/marcoFechaMovil.webp');
-      align-content: center;
-      text-align: center;
-    }
+  .contenedor {
+    width: 50%;
+  }
+  .linea {
+    width: 100%;
+    border-top: 1px solid #000;
+    margin: 2px 0;
+  }
+  .text {
+    font-size: 1rem;
+    margin: 0;
+  }
+  .fecha {
+    font-size: 3.5rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -8%;
+    margin-bottom: 30px;
+  }
+  .hora {
+    font-size: 1.2rem;
+  }
+  .diaHora {
+    font-size: 1.2rem;
+  }
+  .mes {
+    font-size: 1rem;
+  
+  }
+  .anio {
+    margin-top: -4px;
+    font-size: 1.2rem;
+  }
 
-    .contenedor {
-      width: 50%;
-    }
-    .linea {
-      width: 100%;
-      border-top: 1px solid #000;
-      margin: 2px 0 ;
-    }
-    .text {
-      font-size: 1rem;
-      margin: 0;
-    }
-    .fecha {
-      font-size: 5rem;
-      margin-left: 10px;
-      margin-right: 10px;
-      margin-top: -8%;
-    }
-    .hora{
-      font-size: 1.4rem;
-    }
-    .diaHora{
-      font-size: 1.4rem;
-    }
-    .mes{
-      font-size: 1rem;
-      margin-bottom: 0;
-      }
-    .anio{
-      margin-top: -4px;
-      font-size: 1.2rem;
-    }
+  .frases {
+    margin: 7% 15% 5%;
+  }
+  .nosCasamos {
+    margin: 8%;
+    font-size: 1.5em;
+  }
+  .countdown {
+    margin: 10% 5%;
+  }
+  .countdown-item {
+    margin: 0 7px;
+    padding: 10px;
+    height: 70px;
+    width: 70px;
 
-    .frases{
-      margin:7% 10% 5% 10%;
-    } 
-    .nosCasamos{
-      margin: 8%;
-      font-size: 1.5em;
-    }
-    .countdown {
-      margin: 10% 5%;
-    }
-    .countdown-item {
-      margin: 0 7px ;
-      padding: 10px;
-      height: 70px;
-      width: 70px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  .countdown-item .reloj {
+    font-size: 1.5rem;
+  }
+  .countdown-item .subTituloReloj {
+    font-size: 0.9rem;
+    margin-bottom: 10%;
+  }
 
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    }
-    .countdown-item .reloj {
-      font-size: 1.5rem;
-    
-    }
-    .countdown-item .subTituloReloj {
-      font-size: 0.9rem;
-      margin-bottom: 10%;
-    }
+  .contenedor-Linea-tiempo {
+    position: absolute;
+    /* top: 8%; */
+    left: 0;
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    object-fit: cover;
+    gap: 12px;
+  }
 
+  .img-linea-tiempo {
+    width: 65%;
+    /* top: 50px; */
+    padding-right: 10px;
+  }
 
+  .contenedor-fila-horario {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 90%;
+    text-align: center;
+    align-items: center;
+  }
 
+  .contenedor-celda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+  }
+  .contenedor-celda-izquierda {
+    /* margin-top: 6px; */
+    /* top: 20px; */
+    padding-right: 30px;
+  }
+  .superior {
+    margin-bottom: 2%;
+  }
 
+  .img-icon-lineaTiempo {
+    width: 25%;
+  }
+  .text-linea-tiempo {
+    font-size: 13px;
+  }
+  .contenedor-vestimenta {
+    padding-right: 10px;
+  }
+  #img-icon-vestimenta {
+    width: 15%;
+    margin-top: 15px;
+  }
 
+  .contenedor-varios {
+    top: 10%;
+  }
+  .contenedor-varios .varios {
+    top: -75%;
+  }
 
+  .contenedor-variosDerecha {
+    top: 15%;
+  }
+  .contenedor-variosDerecha .varios {
+    top: -20%;
+  }
+  .figure-lados {
+    width: 35%;
+  }
+  .varios-derecha {
+    top: -35%;
+  }
 
+  .image-detail {
+    width: 40%;
+    margin: 0;
+    border-radius: 5px;
+  }
+  .flowerCentral {
+    width: 50%;
+  }
+  .text-boda-poema {
+    margin: 0 10%;
+  }
+  .contenedor-frases {
+    margin: 7% 0;
+  }
+  .text-name-novios {
+    font-size: 2.5rem;
+    margin: 0 10px;
+  }
+  .boton {
+    padding: 5px;
+    font-size: 12px;
+    margin: 10px 0;
+  }
 
-    .contenedor-Linea-tiempo{
-      position: absolute;
-      /* top: 8%; */
-      left: 0;
-      width: 100%;
-      /* height: 100%; */
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      object-fit: cover;  
-      gap: 12px;
-      }
-    
-    
-    
-    .img-linea-tiempo{
-      width: 65%;
-      padding-right:30px;
-    }
-    
-    .contenedor-fila-horario{
-      display: flex;
-      margin: 0 auto;
-      justify-content: space-between;
-      width: 90%; 
-      text-align: center;
-      align-items: center;
-     
-    }
-    
-    .contenedor-celda {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      width: 70%;
-      
-    
-    }
-    .contenedor-celda-izquierda{
-      /* margin-top: 6px; */
-      /* top: 20px; */
-      padding-right: 30px;
-    }
-    .superior{
-      margin-bottom: 2%;
-         
-    }
-    
-    .img-icon-lineaTiempo{
-      width: 25%;
-    }
-    .text-linea-tiempo{
-      font-size: 13px;
-    }
-    .contenedor-vestimenta{
-      padding-right: 30px;
-    }
-    #img-icon-vestimenta{
-      width: 15%;
-      margin-top: 5px;
-    }
+  #imgCostaPalmeras {
+    width: 25%;
+    border-radius: 20%;
+  }
+  #imgYapePlin {
+    width: 15%;
+    border-radius: 8%;
+    margin: 3% 0;
+  }
 
+  .btn-numero {
+    width: auto;
 
-    .contenedor-varios {
-      top: 10%;
-    }
-    .varios{
-      top: -55%;
-    }
+    font-size: 0.8rem;
+  }
+  .text-boda-novios {
+    margin-top: 5%;
+  }
+  #num-banco {
+    font-size: 1rem;
+  }
+  .cuenta-banco {
+    margin-bottom: 5px;
+  }
+  .img-icon {
+    width: 15%;
+  }
+  .music-player {
+    bottom: 20px;
+    right: 20px;
+  }
 
-    .contenedor-variosDerecha{
-      top: 10%;
-    }
-    .figure-lados{
-      width: 30%;
-      max-width: 30%;
+  #play-pause-button {
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    /* background-color: #fff; */
 
-    }
-    .varios-derecha{
-      top: -65%;
-    }
+    /* margin-right: 10px; */
+  }
+  .carousel-inner {
+    border-radius: 0.5rem;
+  }
 
-    .image-detail{
-      width: 40%;
-      margin: 0;
-      border-radius: 5px;
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .carousel-control-prev {
+    left: 0;
+  }
+  .carousel-control-next {
+    right: 0;
+  }
+  .contenedor-carrusel {
+    width: 90%;
+    margin: 15px 0;
+  }
+}
+@media (max-width: 360px) {
+  .texto {
+    font-size: 3.5rem;
+  }
+  .contenedorHijo p{
+    margin:5%;
+  }
+  .tituloPrincipal{
+    font-size: 1.8rem;
+  }
+  .contenedor-variosDerecha .varios {
+    top: -7%;
+  }
+  .countdown-item {
+    margin: 0 7px;
+    padding: 10px;
+    height: 60px;
+    width: 60px;
 
-    }
-    .flowerCentral{
-
-      width: 50%;
-
-      
-    }
-    .text-boda-poema{
-      margin: 0 10%;
-    }
-    .contenedor-frases{
-      margin: 7% 0;
-    }
-    .text-name-novios {
-      font-size: 1.4rem;
-      margin: 0 10px; 
-    }
-    .boton {
-      font-family:"Cormorant Garamond" ;
-      padding: 5px;
-      font-size: 12px;
-      color: white;
-
-    }
-
-    #imgCostaPalmeras{
-      width: 25%;
-      border-radius: 20%;
-    }
-    #imgYapePlin{
-      width: 15%;
-      border-radius: 8%;
-      margin: 3% 0;
-    
-    }
-    
-    .btn-numero{
-      width: auto;
-
-      font-size: 0.8rem;
-    
-    }
-    #num-banco{
-      font-size: 1rem;
-    
-    }
-    .cuenta-banco{
-      margin-bottom: 5px;
-    }
-    .img-icon{
-      width: 15%;
-      margin-bottom: 5%;
-    }
-    .music-player {
-      bottom: 20px;
-      right: 20px;
-    }
-
-    #play-pause-button {
-      width: 40px;
-      height: 40px;
-      align-items: center;
-      /* background-color: #fff; */
-
-      /* margin-right: 10px; */   
-    
-    }
-    .carousel-inner {
-      border-radius: 0.5rem;
-    }
-
-    .carousel-control-next-icon, .carousel-control-prev-icon {
-
-      width: 20px;
-      height: 20px;
-    
-    }
-    .carousel-control-prev {
-      left: 0;
-    }
-    .carousel-control-next {
-      right: 0;
-    }
-    .contenedor-carrusel{
-      width: 90%;
-      margin: 15px 0;
-    }
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  .countdown-item .reloj {
+    font-size: 1.2rem;
+  }
+  .countdown-item .subTituloReloj {
+    font-size: 0.8rem;
+  }
 }

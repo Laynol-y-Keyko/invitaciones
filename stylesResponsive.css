@@ -1,4 +1,55 @@
 
+@media (max-width: 1280px) {
+  .texto {
+    font-size: 6rem;
+  }
+  .imagen-comun{
+    width: 45%;
+
+  }
+  .contenedorHijo p{
+    margin:5%;
+  }
+  .tituloPrincipal{
+    font-size: 3rem;
+  }
+  .contenedor-variosDerecha .varios {
+    top: 25%;
+  }
+  .countdown-item {
+    margin: 0 7px;
+    padding: 10px;
+    height: 100px;
+    width: 100px;
+
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  .countdown-item .reloj {
+    font-size: 2.5rem;
+  }
+  .countdown-item .subTituloReloj {
+    font-size: 1.2rem;
+  }
+
+  .contenedor-carrusel {
+    width: 65%;
+    margin: 15px 0;
+  }
+
+  .contenedor-varios {
+    top: 9%;
+  }
+  .contenedor-varios .varios {
+    top: -50%;
+  }
+  .contenedor-variosDerecha{
+    top: 10%;
+  }
+  .contenedor-variosDerecha .varios{
+    top: -35%;
+  }
+}
 
 @media (max-width: 428px) {
   #fondo {
@@ -6,7 +57,7 @@
     background-position: center; /* Centra la imagen horizontalmente */
   }
   .portada {
-    content: url("img/imgPrincipal.png");
+    content: url("img/imgPrincipal.webp");
     width: 100%;
     max-width: 100%;
     height: auto;
@@ -189,17 +240,17 @@
   }
 
   .contenedor-varios {
-    top: 10%;
+    top: 9%;
   }
   .contenedor-varios .varios {
     top: -75%;
   }
 
   .contenedor-variosDerecha {
-    top: 15%;
+    top: 20%;
   }
   .contenedor-variosDerecha .varios {
-    top: -20%;
+    top: -55%;
   }
   .figure-lados {
     width: 35%;
@@ -237,7 +288,7 @@
     border-radius: 20%;
   }
   #imgYapePlin {
-    width: 15%;
+    width: 10%;
     border-radius: 8%;
     margin: 3% 0;
   }
@@ -292,6 +343,8 @@
     margin: 15px 0;
   }
 }
+
+
 @media (max-width: 360px) {
   .texto {
     font-size: 3.5rem;
@@ -303,7 +356,7 @@
     font-size: 1.8rem;
   }
   .contenedor-variosDerecha .varios {
-    top: -7%;
+    top: -5%;
   }
   .countdown-item {
     margin: 0 7px;
@@ -320,4 +373,50 @@
   .countdown-item .subTituloReloj {
     font-size: 0.8rem;
   }
+}
+
+
+
+@media (max-width: 320px) {
+  .texto {
+    font-size: 3.5rem;
+  }
+  .contenedorHijo p{
+    margin:5%;
+  }
+  .tituloPrincipal{
+    font-size: 1.8rem;
+  }
+  .contenedor-variosDerecha {
+    top: 23%;
+  }
+  .contenedor-variosDerecha .varios {
+    top: -50%;
+  }
+  .countdown-item {
+    margin: 0 7px;
+    padding: 10px;
+    height: 60px;
+    width: 60px;
+
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  .countdown-item .reloj {
+    font-size: 1.2rem;
+  }
+  .countdown-item .subTituloReloj {
+    font-size: 0.8rem;
+  }
+  .img-linea-tiempo {
+    width: 80%;
+    /* top: 50px; */
+    padding-right: 10px;
+}
+.contenedor-celda-izquierda {
+  padding-right: 20px;
+}
+.contenedor-fila-horario {
+  width: 100%;
+}
 }

@@ -619,6 +619,13 @@ p{
 }
 
 
+.imagen-carrusel{
+  width: auto;
+  border-radius: 20px;
+  height: 460px;
+}
+
+
 /* ----------------************************/
 [data-animation="fadeFlowerD"] {
   opacity: 0;

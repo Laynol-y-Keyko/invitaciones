@@ -146,6 +146,11 @@ body {
   border-right: 1px solid #000;
   /* border-left: 1px solid #000; */
 }
+#linea-vertical-padrinos{
+  width: 2px;
+  height: 50px;
+  border-right: 1px solid #000;
+}
 .containt .tituloPrincipal{
   margin-bottom: 60px;
 }
@@ -558,6 +563,7 @@ p{
   /* padding: 10px; */
   /* border-radius: 50%; */
   cursor: pointer;
+  z-index: 2;
 }
 #play-pause-container {
     transform: scale(1);

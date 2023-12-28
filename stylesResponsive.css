@@ -1,16 +1,14 @@
-
 @media (max-width: 1280px) {
   .texto {
     font-size: 6rem;
   }
-  .imagen-comun{
+  .imagen-comun {
     width: 45%;
-
   }
-  .contenedorHijo p{
-    margin:5%;
+  .contenedorHijo p {
+    margin: 5%;
   }
-  .tituloPrincipal{
+  .tituloPrincipal {
     font-size: 3rem;
   }
   .contenedor-variosDerecha .varios {
@@ -43,10 +41,10 @@
   .contenedor-varios .varios {
     top: -50%;
   }
-  .contenedor-variosDerecha{
+  .contenedor-variosDerecha {
     top: 10%;
   }
-  .contenedor-variosDerecha .varios{
+  .contenedor-variosDerecha .varios {
     top: -35%;
   }
 }
@@ -145,7 +143,6 @@
   }
   .mes {
     font-size: 1rem;
-  
   }
   .anio {
     margin-top: -4px;
@@ -344,19 +341,18 @@
   }
 }
 
-
 @media (max-width: 360px) {
   .texto {
     font-size: 3.5rem;
   }
-  .contenedorHijo p{
-    margin:5%;
+  .contenedorHijo p {
+    margin: 5%;
   }
-  .tituloPrincipal{
+  .tituloPrincipal {
     font-size: 1.8rem;
   }
   .contenedor-variosDerecha .varios {
-    top: -5%;
+    top: -45%;
   }
   .countdown-item {
     margin: 0 7px;
@@ -375,16 +371,14 @@
   }
 }
 
-
-
 @media (max-width: 320px) {
   .texto {
     font-size: 3.5rem;
   }
-  .contenedorHijo p{
-    margin:5%;
+  .contenedorHijo p {
+    margin: 5%;
   }
-  .tituloPrincipal{
+  .tituloPrincipal {
     font-size: 1.8rem;
   }
   .contenedor-variosDerecha {
@@ -412,11 +406,11 @@
     width: 80%;
     /* top: 50px; */
     padding-right: 10px;
-}
-.contenedor-celda-izquierda {
-  padding-right: 20px;
-}
-.contenedor-fila-horario {
-  width: 100%;
-}
+  }
+  .contenedor-celda-izquierda {
+    padding-right: 20px;
+  }
+  .contenedor-fila-horario {
+    width: 100%;
+  }
 }

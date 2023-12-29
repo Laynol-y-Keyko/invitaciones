@@ -197,6 +197,12 @@
     padding-right: 10px;
   }
 
+  .color-hora-linea{
+    font-size: 1.2rem;
+  }
+  .contenedor-celda-derecha{
+    right: 100px;
+  }
   .contenedor-fila-horario {
     display: flex;
     margin: 0 auto;
@@ -278,7 +284,7 @@
     padding: 5px;
     font-size: 12px;
     margin: 10px 0;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.1s ease-in-out;
     animation: pulsar 5s infinite;
   }
   .boton:hover {

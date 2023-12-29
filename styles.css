@@ -344,8 +344,8 @@ margin-bottom: 2%;
 }
 
 .color-hora-linea{
-  color:#B69507 ;
-
+ /*color:#B69507 ;*/
+color: #897004;
   /* -webkit-text-stroke: 1px #8C7511; */
 }
 
@@ -712,7 +712,7 @@ p{
     transform: scale(1);
   }
   50% {
-    transform: scale(1.08);
+    transform: scale(1.1);
   }
 
 }

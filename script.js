@@ -100,3 +100,19 @@ document.addEventListener("DOMContentLoaded", function () {
   playPauseButton.classList.remove("play");
   playPauseButton.classList.add("pause");
 });
+
+
+    var boton = document.querySelectorAll(".boton");
+
+    function iniciarVibracion() {
+      enlace.style.animation = 'vibrar 0.5s infinite';
+    }
+
+    function detenerVibracion() {
+      enlace.style.animation = 'none';
+    }
+
+    setInterval(function() {
+      iniciarVibracion();
+      setTimeout(detenerVibracion(), 500); // Detener la vibración después de 0.5 segundos
+    }, 2000); // Iniciar la vibración cada 2 segundos

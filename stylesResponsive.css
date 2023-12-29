@@ -278,6 +278,12 @@
     padding: 5px;
     font-size: 12px;
     margin: 10px 0;
+    transition: transform 0.5s ease-in-out;
+    animation: pulsar 5s infinite;
+  }
+  .boton:hover {
+    transform: scale(1.03);
+    animation: none; /* Detener la animación al pasar el ratón */
   }
 
   #imgCostaPalmeras {
@@ -308,13 +314,13 @@
     width: 15%;
   }
   .music-player {
-    bottom: 20px;
-    right: 20px;
+    bottom: 25px;
+    right: 25px;
   }
 
   #play-pause-button {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     align-items: center;
     /* background-color: #fff; */
 

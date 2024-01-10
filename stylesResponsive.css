@@ -296,10 +296,10 @@
     width: 25%;
     border-radius: 20%;
   }
-  #imgYapePlin {
+  .imgYapePlin {
     width: 10%;
     border-radius: 8%;
-    margin: 3% 0;
+
   }
 
   .btn-numero {

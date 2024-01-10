@@ -469,11 +469,11 @@ border-radius: 1rem!important;
   width: 20%;
   border-radius: 20%;
 }
-#imgYapePlin{
+.imgYapePlin{
   width: 5%;
   border-radius: 8%;
-  margin: 3% 0;
-
+  margin: 3% auto;
+  display: block;
 }
 
 .img-icon{
